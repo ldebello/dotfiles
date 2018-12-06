@@ -1,0 +1,8 @@
+= dotfiles
+
+== Installation
+
+=== Using curl
+```
+sh -c "$(curl -fsSL https://raw.github.com/ldebello/dotfiles/master/scripts/install.sh)"
+```
