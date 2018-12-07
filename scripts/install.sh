@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 REPOS=$HOME/repos
 DOTFILES=$REPOS/dotfiles
@@ -50,6 +50,14 @@ main() {
     info "Brewing all the things"
     source scripts/brew.sh
     success "Homebrew deps installed"
+
+    info "Configuring system"
+    source scripts/system.sh
+    success "System was configured"
+
+    info "Configuring jEnv"
+    source scripts/jenv-plugins.sh
+    success "jEnv was configured"
   fi
 
   success "Installed dotfiles"
