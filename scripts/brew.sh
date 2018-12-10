@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
 brew install jenv
 brew install maven
@@ -16,3 +16,5 @@ brew cask install slack
 brew cask install visual-studio-code
 brew cask install caffeine
 brew cask install intellij-idea
+brew cask install postman
+brew cask install tunnelblick
