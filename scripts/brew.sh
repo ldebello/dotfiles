@@ -8,6 +8,10 @@ brew install gpg
 brew install jq
 brew install xmlstarlet
 
+brew install redis
+brew install postgresql@9.6
+brew install mysql
+
 brew cask install zulu8
 brew cask install zulu
 
@@ -18,3 +22,11 @@ brew cask install caffeine
 brew cask install intellij-idea
 brew cask install postman
 brew cask install tunnelblick
+brew cask install mysqlworkbench
+brew cask install pgadmin4
+
+brew tap homebrew/services
+
+brew services start mysql
+brew services start redis
+brew services start postgresql@9.6
