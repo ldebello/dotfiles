@@ -3,6 +3,7 @@
 brew tap homebrew/cask-versions
 
 brew install jenv
+brew install nvm
 brew install maven
 brew install gpg
 brew install jq
