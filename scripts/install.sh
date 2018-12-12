@@ -36,10 +36,6 @@ main() {
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     success "Homebrew installed"
 
-    info "Installing oh-my-zsh"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    success "oh-my-zsh installed"
-
     info "Cloning dotfiles into $REPOS"
     mkdir -p $REPOS
     cd $REPOS
@@ -58,6 +54,10 @@ main() {
     info "Configuring jEnv"
     source scripts/jenv-plugins.sh
     success "jEnv was configured"
+    
+    info "Installing oh-my-zsh"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    success "oh-my-zsh installed"
   fi
 
   success "Installed dotfiles"
