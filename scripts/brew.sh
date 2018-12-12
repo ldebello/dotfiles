@@ -6,6 +6,7 @@ brew install jenv
 brew install nvm
 brew install maven
 brew install gpg
+brew install pass
 brew install jq
 brew install xmlstarlet
 
