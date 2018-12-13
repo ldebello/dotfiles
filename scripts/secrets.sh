@@ -10,10 +10,10 @@ then
     lpass login $LAST_PASS_USERNAME
 
     echo "Importing keys"
-    lpass show Personal/gpg-private --notes > ~/.ssh/id_rsa
-    lpass show Personal/gpg-private --notes > ~/.ssh/id_rsa.pub
+    lpass show Personal/ssh-private --notes > ~/.ssh/id_rsa
+    lpass show Personal/ssh-public --notes > ~/.ssh/id_rsa.pub
 
-    lpass show Personal/gpg-private --notes > ~/pubkey.asc
+    lpass show Personal/gpg-public --notes > ~/pubkey.asc
     lpass show Personal/gpg-private --notes > ~/privkey.asc
 
     gpg --import ~/pubkey.asc
@@ -22,7 +22,7 @@ then
     rm ~/pubkey.asc
     rm ~/privkey.asc
 
-    lpass logout
+    lpass logout -f
 
     echo "Please, provide repo for secrets:"
     read SECRETS_REPO
