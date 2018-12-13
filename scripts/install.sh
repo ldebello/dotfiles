@@ -59,10 +59,6 @@ main() {
     source scripts/system.sh
     success "System was configured"
 
-    info "Configuring jEnv"
-    source scripts/jenv-plugins.sh
-    success "jEnv was configured"
-    
     info "Clean up"
     cd ~
     rm -rf $DOTFILES
