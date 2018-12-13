@@ -16,4 +16,4 @@ ln -s ~/.profile ~/.zprofile
 
 # Configure nvm
 nvm install 8.9.4
-npm login
+npm login --registry=https://nexus3.build.msap.io/repository/npm-internal/ --scope=@mulesoft
