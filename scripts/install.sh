@@ -47,6 +47,14 @@ main() {
     source scripts/brew.sh
     success "Homebrew deps installed"
 
+    info "Configuring secrets"
+    source scripts/secrets.sh
+    success "Secrets were configured"
+
+    info "Configuring bookmarks"
+    source scripts/bookmarks.sh
+    success "Bookmarks were configured"
+
     info "Configuring system"
     source scripts/system.sh
     success "System was configured"
@@ -54,6 +62,10 @@ main() {
     info "Configuring jEnv"
     source scripts/jenv-plugins.sh
     success "jEnv was configured"
+    
+    info "Clean up"
+    cd ~
+    rm -rf $DOTFILES
     
     info "Installing oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

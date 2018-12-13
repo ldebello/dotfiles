@@ -7,6 +7,7 @@ brew install nvm
 brew install maven
 brew install gpg
 brew install pass
+brew install lastpass-cli
 brew install jq
 brew install xmlstarlet
 
