@@ -1,7 +1,9 @@
 #!/bin/sh
 
-echo "Do you want to configure your secrets?"
-read ANSWER
+read -p "Do you want to configure your secrets? " ANSWER
+until [[ "$ANSWER" =~ [A-Za-z] ]]; do
+    read -p "Do you want to configure your secrets? " ANSWER
+done
 
 if [ "$ANSWER" == "y" ]; then
     echo "Please, provide your last pass username:"
