@@ -1,5 +1,6 @@
 #!/bin/sh
 
+brew tap homebrew/services
 brew tap homebrew/cask-versions
 
 brew install jenv
@@ -27,5 +28,3 @@ brew cask install postman
 brew cask install tunnelblick
 brew cask install mysqlworkbench
 brew cask install pgadmin4
-
-brew tap homebrew/services
