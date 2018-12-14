@@ -22,6 +22,21 @@ npm login --registry=https://nexus3.build.msap.io/repository/npm-internal/ --sco
 # Start all brew services
 brew services start --all
 
+# Configure mysql password
+read -p "Do you want to configure mysql password? " ANSWER
+until [[ "$ANSWER" =~ [A-Za-z] ]]; do
+    read -p "Do you want to configure mysql password? " ANSWER
+done
+
+if [ "$ANSWER" == "y" ]; then
+    echo "Enter new password for mysql: "
+    read -s NEW_PASSWORD
+
+mysql -u root <<MYSQL_INPUT
+ALTER USER 'root'@'localhost' IDENTIFIED BY '$NEW_PASSWORD';
+MYSQL_INPUT
+fi
+
 # Configure timezone
 sudo systemsetup -settimezone America/Argentina/Buenos_Aires
 
