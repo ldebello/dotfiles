@@ -65,3 +65,7 @@ dockutil --add /Applications/IntelliJ\ IDEA.app
 dockutil --add /Applications/Postman.app
 dockutil --add /Applications/MySQLWorkbench.app
 dockutil --add /Applications/pgAdmin\ 4.app
+
+# Configure DBs
+createuser amc_deployer_db
+createdb amc_deployer_db -O amc_deployer_db -W
