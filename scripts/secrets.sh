@@ -14,6 +14,10 @@ if [ "$ANSWER" == "y" ]; then
     mkdir -p ~/.ssh
     lpass show Personal/ssh-private --notes > ~/.ssh/id_rsa
     lpass show Personal/ssh-public --notes > ~/.ssh/id_rsa.pub
+    chmod 400 ~/.ssh/id_rsa
+
+    echo "Insert password for private key"
+    ssh-add -K
 
     lpass show Personal/gpg-public --notes > ~/pubkey.asc
     lpass show Personal/gpg-private --notes > ~/privkey.asc
