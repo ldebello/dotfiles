@@ -41,14 +41,14 @@ fi
 sudo systemsetup -settimezone America/Argentina/Buenos_Aires
 
 # Configure menu bar
-BATTERY=$(grep "Battery.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c)
+BATTERY=`grep "Battery.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c`
 if [ $BATTERY == 0 ]; then
     echo "Adding Battery status to menu" 
     open '/System/Library/CoreServices/Menu Extras/Battery.menu'
 fi
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
-VOLUME=$(grep "Volume.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c)
+VOLUME=`grep "Volume.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c`
 if [ $VOLUME == 0 ]; then
     echo "Adding Volume status to menu" 
     open '/System/Library/CoreServices/Menu Extras/Volume.menu'
