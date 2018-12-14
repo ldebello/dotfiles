@@ -10,6 +10,7 @@ brew install gpg
 brew install pass
 brew install lastpass-cli
 brew install jq
+brew install dockutil
 brew install xmlstarlet
 
 brew install redis
