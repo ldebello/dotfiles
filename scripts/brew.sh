@@ -29,7 +29,3 @@ brew cask install mysqlworkbench
 brew cask install pgadmin4
 
 brew tap homebrew/services
-
-brew services start mysql
-brew services start redis
-brew services start postgresql@9.6
