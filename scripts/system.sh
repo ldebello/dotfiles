@@ -18,3 +18,23 @@ git config --global user.email luis.debello@mulesoft.com
 # Configure nvm
 nvm install 8.9.4
 npm login --registry=https://nexus3.build.msap.io/repository/npm-internal/ --scope=@mulesoft
+
+# Configure timezone
+sudo systemsetup -settimezone America/Argentina/Buenos_Aires
+
+# Configure menu bar
+BATTERY=$(grep "Battery.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c)
+if [ $BATTERY == 0 ]; then
+    echo "Adding Battery status to menu" 
+    open '/System/Library/CoreServices/Menu Extras/Battery.menu'
+fi
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+VOLUME=$(grep "Volume.menu" ~/Library/Preferences/com.apple.systemuiserver.plist -c)
+if [ $VOLUME == 0 ]; then
+    echo "Adding Volume status to menu" 
+    open '/System/Library/CoreServices/Menu Extras/Volume.menu'
+fi
+osascript -e "set Volume 0"
+
+killall SystemUIServer
