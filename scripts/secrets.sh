@@ -3,8 +3,7 @@
 echo "Do you want to configure your secrets?"
 read ANSWER
 
-if [ "$ANSWER" == "y" ] 
-then
+if [ "$ANSWER" == "y" ]; then
     echo "Please, provide your last pass username:"
     read LAST_PASS_USERNAME
     lpass login $LAST_PASS_USERNAME
