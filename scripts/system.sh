@@ -56,3 +56,12 @@ fi
 osascript -e "set Volume 0"
 
 killall SystemUIServer
+
+# Configure dock icons
+dockutil --add /Applications/iTerm.app
+dockutil --add /Applications/Slack.app
+dockutil --add /Applications/Visual\ Studio\ Code.app
+dockutil --add /Applications/IntelliJ\ IDEA.app
+dockutil --add /Applications/Postman.app
+dockutil --add /Applications/MySQLWorkbench.app
+dockutil --add /Applications/pgAdmin\ 4.app
