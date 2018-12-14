@@ -19,6 +19,9 @@ git config --global user.email luis.debello@mulesoft.com
 nvm install 8.9.4
 npm login --registry=https://nexus3.build.msap.io/repository/npm-internal/ --scope=@mulesoft
 
+# Start all brew services
+brew services start --all
+
 # Configure timezone
 sudo systemsetup -settimezone America/Argentina/Buenos_Aires
 
