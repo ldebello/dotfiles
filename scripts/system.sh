@@ -69,3 +69,6 @@ dockutil --add /Applications/pgAdmin\ 4.app
 # Configure DBs
 createuser amc_deployer_db
 createdb amc_deployer_db -O amc_deployer_db -W
+
+# Install requests for python
+sudo easy_install -U requests
