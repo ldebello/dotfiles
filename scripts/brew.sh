@@ -6,6 +6,7 @@ brew tap homebrew/cask-versions
 brew install jenv
 brew install nvm
 brew install maven
+brew install hg
 brew install gpg
 brew install pass
 brew install lastpass-cli
