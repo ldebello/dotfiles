@@ -21,6 +21,8 @@ brew install mysql
 brew cask install zulu8
 brew cask install zulu
 
+brew cask install ifunbox
+brew cask install the-unarchiver
 brew cask install iterm2
 brew cask install slack
 brew cask install visual-studio-code
