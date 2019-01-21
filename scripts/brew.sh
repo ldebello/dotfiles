@@ -30,6 +30,7 @@ brew cask install postman
 brew cask install tunnelblick
 brew cask install mysqlworkbench
 brew cask install pgadmin4
+brew cask install licecap
 
 brew cask install ifunbox
 brew cask install megasync
