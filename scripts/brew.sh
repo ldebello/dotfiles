@@ -13,6 +13,7 @@ brew install lastpass-cli
 brew install jq
 brew install dockutil
 brew install xmlstarlet
+brew install antigen
 
 brew install redis
 brew install postgresql@9.6
