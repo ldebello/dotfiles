@@ -16,6 +16,7 @@ brew install xmlstarlet
 brew install antigen
 brew install httpie
 brew install watch
+brew install wget
 
 brew install redis
 brew install postgresql@9.6
