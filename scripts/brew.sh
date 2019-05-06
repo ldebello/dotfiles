@@ -17,6 +17,7 @@ brew install antigen
 brew install httpie
 brew install watch
 brew install wget
+brew install terraform
 
 brew install redis
 brew install postgresql@9.6
