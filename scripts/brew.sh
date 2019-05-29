@@ -32,7 +32,6 @@ brew cask install visual-studio-code
 brew cask install caffeine
 brew cask install intellij-idea
 brew cask install postman
-brew cask install tunnelblick
 brew cask install mysqlworkbench
 brew cask install pgadmin4
 brew cask install licecap
