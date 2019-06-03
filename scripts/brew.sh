@@ -19,6 +19,7 @@ brew install watch
 brew install wget
 brew install terraform
 brew install cmake
+brew install unittest-cpp
 
 brew install redis
 brew install postgresql@9.6
