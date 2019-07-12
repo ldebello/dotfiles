@@ -21,6 +21,7 @@ brew install terraform
 
 brew install redis
 brew install postgresql@9.6
+brew install pgbadger
 brew install mysql
 
 brew cask install zulu8
