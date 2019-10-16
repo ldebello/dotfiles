@@ -18,6 +18,7 @@ brew install httpie
 brew install watch
 brew install wget
 brew install terraform
+brew install sslscan
 
 brew install redis
 brew install postgresql@9.6
