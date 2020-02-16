@@ -24,6 +24,7 @@ brew install redis
 brew install postgresql@9.6
 brew install pgbadger
 brew install mysql
+brew install asdf
 
 brew cask install zulu8
 brew cask install zulu
