@@ -1,11 +1,8 @@
 # Init jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
-# Postgresql 9.6
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
-
-# asdf
-export PATH="$HOME/.asdf/shims:$PATH"
+# Postgresql
+export PATH="/usr/local/opt/postgresql/bin:$PATH"
 
 # gpg
 export GPG_TTY=$(tty)
@@ -26,4 +23,4 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Tell Antigen that you're done.
 antigen apply
 
-# Include these plugins in .zshrc plugins=(git docker kubectl minikube)
+# Include these plugins in .zshrc plugins=(git docker kubectl)

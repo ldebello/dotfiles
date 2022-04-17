@@ -6,7 +6,6 @@ brew tap homebrew/cask-versions
 brew install jenv
 brew install nvm
 brew install maven
-brew install hg
 brew install gpg
 brew install pass
 brew install lastpass-cli
@@ -17,17 +16,11 @@ brew install antigen
 brew install httpie
 brew install watch
 brew install wget
-brew install terraform
 brew install sslscan
 
 brew install redis
-brew install postgresql@9.6
-brew install pgbadger
+brew install postgresql
 brew install mysql
-brew install asdf
-
-brew cask install zulu8
-brew cask install zulu
 
 brew cask install iterm2
 brew cask install slack
@@ -41,6 +34,4 @@ brew cask install licecap
 brew cask install mat
 brew cask install wireshark
 
-brew cask install ifunbox
-brew cask install megasync
 brew cask install the-unarchiver

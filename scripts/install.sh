@@ -51,9 +51,9 @@ main() {
     source scripts/secrets.sh
     success "Secrets were configured"
 
-    info "Configuring bookmarks"
-    source scripts/bookmarks.sh
-    success "Bookmarks were configured"
+    # info "Configuring bookmarks"
+    # source scripts/bookmarks.sh
+    # success "Bookmarks were configured"
 
     info "Configuring system"
     source scripts/system.sh
