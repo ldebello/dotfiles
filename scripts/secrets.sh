@@ -6,7 +6,7 @@ until [[ "$ANSWER" =~ [A-Za-z] ]]; do
 done
 
 if [ "$ANSWER" == "y" ]; then
-    echo "Please, provide your last pass username:"
+    echo "Please, provide your last pass username"
     read LAST_PASS_USERNAME
     lpass login $LAST_PASS_USERNAME
 
@@ -16,7 +16,7 @@ if [ "$ANSWER" == "y" ]; then
     lpass show Personal/ssh-public --notes > ~/.ssh/id_rsa.pub
     chmod 400 ~/.ssh/id_rsa
 
-    echo "Insert password for private key"
+    echo "Enter passphrase for your SSH key"
     ssh-add -K
 
     echo "Importing GPG keys"
@@ -31,7 +31,7 @@ if [ "$ANSWER" == "y" ]; then
 
     lpass logout -f
 
-    echo "Please, provide repo for secrets:"
+    echo "Please, provide repo for secrets"
     read SECRETS_REPO
     git clone $SECRETS_REPO ~/.password-store
 fi
