@@ -17,7 +17,7 @@ if [ "$ANSWER" == "y" ]; then
     chmod 400 ~/.ssh/id_rsa
 
     echo "Enter passphrase for your SSH key"
-    ssh-add -K
+    ssh-add --apple-use-keychain
 
     echo "Importing GPG keys"
     lpass show Personal/gpg-public --notes > ~/pubkey.asc
