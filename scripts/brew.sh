@@ -6,6 +6,7 @@ brew install gpg
 brew install pass
 brew install lastpass-cli
 
+brew install --cask iterm2
 brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask intellij-idea
