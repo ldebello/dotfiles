@@ -5,6 +5,7 @@ brew install maven
 brew install gpg
 brew install pass
 brew install lastpass-cli
+brew install antigen
 
 brew install --cask iterm2
 brew install --cask slack
