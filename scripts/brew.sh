@@ -12,4 +12,5 @@ brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask intellij-idea
 brew install --cask postman
+brew install --cask docker
 brew install --cask the-unarchiver
